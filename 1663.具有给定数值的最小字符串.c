@@ -51,7 +51,7 @@
  */
 
 // @lc code=start
-char * getSmallestString(int n, int k){
+char * getSmallestString(int n, int k){// 题目已经限制了k的范围，不然还是要判断一下是否满足k <= n * 26的
     char *res = (char *)malloc(sizeof(char) * (n + 1));
     memset(res, 'a', n);
     res[n] = '\0';
